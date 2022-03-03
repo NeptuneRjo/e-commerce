@@ -6,6 +6,7 @@ export default makeStyles(() => ({
   },
   cardContent: {
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
   cartActions: {
