@@ -29,7 +29,7 @@ const App = () => {
     setCart(cart);
   }
 
-  const handleRemovefromCart = async (productId) => {
+  const handleRemoveFromCart = async (productId) => {
     const { cart } = await commerce.cart.remove(productId);
 
     setCart(cart);
@@ -46,8 +46,6 @@ const App = () => {
     fetchCart();
   }, []);
 
-  console.log(cart);
-
   return (
     <Router>
       <div>
@@ -58,7 +56,7 @@ const App = () => {
             <Cart 
               cart={cart} 
               handleUpdateCartQty={handleUpdateCartQty}
-              handleRemovefromCart={handleRemovefromCart}
+              handleRemoveFromCart={handleRemoveFromCart}
               handleEmptyCart={handleEmptyCart}
             />} 
           />
