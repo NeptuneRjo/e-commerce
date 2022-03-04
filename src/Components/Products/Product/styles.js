@@ -16,5 +16,10 @@ export default makeStyles(() => ({
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    width: '100%',
+  },
+  name: {
+    width: '70%',
   },
 }));
