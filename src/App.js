@@ -47,7 +47,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar totalItems={cart.total_items} />
         <Routes>
